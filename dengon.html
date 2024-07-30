@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+      <script>
+function 伝言する() {
+  if (入力内容.value === "") {
+    alert("内容を入れてください");
+  } else {
+    伝言エリア.innerText = 入力内容.value;
+    alert("伝言をセットしました");
+  }
+}
+function ClearMessage() {
+  伝言エリア.innerText = "";
+}
+</script>
+  </head>
+<body>
+<h1 style="font-size:25px">伝言板</h1>
+<p id="伝言エリア">伝言はまだありません
+<button onclick="ClearMessage()">伝言を削除</button></p>
+
+<input id="入力内容" style="margin-right:5px"><button onclick="伝言する()">投稿</button>
+
+</body>
+</html>
